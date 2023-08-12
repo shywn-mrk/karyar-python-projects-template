@@ -40,6 +40,12 @@ pip install -r requirements.txt
 pre-commit install
 ```
 
+Also make sure you autoupdate pre-commit if you faced any issues:
+```bash
+pre-commit autoupdate
+```
+
+
 5 - Start developing your project and we wish you the best ;)
 
 
