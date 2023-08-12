@@ -1,0 +1,50 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/psf/black
+    rev: 23.7.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        name: isort (python)
+      - id: isort
+        name: isort (cython)
+        types: [cython]
+      - id: isort
+        name: isort (pyi)
+        types: [pyi]
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [
+            'flake8-blind-except',
+            'flake8-docstrings',
+            'flake8-bugbear',
+            'flake8-comprehensions',
+            'flake8-docstrings',
+            'flake8-implicit-str-concat',
+            'pydocstyle>=5.0.0',
+        ]
+        exclude: ^tests/test_cases/no_closing_bracket\.py$
+
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        entry: mypy --config-file mypy.ini
+        language: python
+        additional_dependencies: ["mypy==1.5.0"]
+        types: [python]
+        require_serial: true
+        verbose: false
