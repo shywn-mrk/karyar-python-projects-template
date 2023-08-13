@@ -1,7 +1,7 @@
 # karyar-python-projects-template
 
 Hello dear students and welcome.
-To create your project, just simply [use this template](https://github.com/new?template_name=karyar-python-projects-template).
+To create your project, just simply [use this template](https://github.com/new?template_name=karyar-python-projects-template&template_owner=shywn-mrk).
 
 
 # Installation
