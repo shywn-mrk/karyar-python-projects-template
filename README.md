@@ -1,8 +1,7 @@
 # karyar-python-projects-template
 
 Hello dear students and welcome.
-To create your project, first fork this repository, and then,
-start to make your repository and select this as your starter template.
+To create your project, just simply [use this template](https://github.com/new?template_name=karyar-python-projects-template).
 
 
 # Installation
